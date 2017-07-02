@@ -1,0 +1,17 @@
+﻿@model Kavenegar.Models.SendResult
+@{
+    ViewBag.Title = "Index";
+}
+@if (Model != null)
+{
+    <p>Messageid @Model.Messageid </p>
+    <p>Message @Model.Message </p>
+    <p>Status @Model.Status </p>
+    <p>Statustext @Model.StatusText </p>
+    <p>Receptor @Model.Receptor </p>
+    <p>Sender @Model.Sender </p>
+    <p>Date @Model.Date </p>
+    <p>Cost @Model.Cost </p>
+}else{
+    <p>@ViewBag.Message</p>
+}
